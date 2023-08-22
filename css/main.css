@@ -1140,6 +1140,53 @@
      .s-m-list__link {
          text-decoration: none;
     }
+
+    /*    Plan page style */
+    
+
+    .plan {
+        padding-bottom: 120px;
+    }
+
+    .plan__wrapper {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        padding: 101px 24px 136px;
+        background: url('../images/planherobgmobile.png') no-repeat center;
+        border-radius: 10px;
+    }
+
+    .plan__title {
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 40px; 
+        text-align: center;
+        color: #fefcf7;
+    }
+
+    .plan__desc-wrapper {
+        max-width: 279px;
+    }
+
+    .plan__desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Barlow;
+        font-size: 14px;
+        line-height: 25px; 
+        text-align: center;
+        color: #fefcf7;
+        opacity: 0.8;
+    }
+
+
+
+
+/*    Plan page style ends */
 }
  @media only screen and (min-width: 355px) and (max-width: 769px) {
      body {
@@ -2068,6 +2115,60 @@
          text-decoration: none;
     }
 
+
+/*    Plan page style */
+    
+
+    .plan {
+        padding-bottom: 120px;
+    }
+
+    .plan__wrapper {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        padding: 101px 24px 136px;
+        background: url('../images/planherobgmobile.png') no-repeat;
+        border-radius: 10px;
+    }
+
+    .plan__title {
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 40px; 
+        text-align: center;
+        color: #fefcf7;
+    }
+
+    .plan__desc-wrapper {
+        max-width: 279px;
+    }
+
+    .plan__desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Barlow;
+        font-size: 15px;
+        line-height: 25px; 
+        text-align: center;
+        color: #fefcf7;
+        opacity: 0.8;
+    }
+
+
+
+
+
+
+
+
+
+
+/*    Plan page style ends */
+
    
 }
 
@@ -2076,6 +2177,11 @@
         background-image: url('../images/aboutbgtablet.png');
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    .plan__wrapper {
+        background: url('../images/planherobgtablet.png') no-repeat;
+        border-radius: 10px;
     }
 }
 
@@ -2086,7 +2192,7 @@
          height: 26px !important;
     }
      .hero__wrapper {
-         background: url("../images/herobg.png") no-repeat center;
+         background: url("../images/herobg.png") no-repeat;
     }
      .hero__content-wrapper {
          -webkit-box-align: center;
@@ -2104,6 +2210,10 @@
 
     .commitment__desc-wrapper {
         max-width: 500px;
+    }
+
+    .plan__desc-wrapper {
+        max-width: 450px;
     }
 
 }
@@ -2974,6 +3084,49 @@
      .s-m-list__link {
          text-decoration: none;
     }
+
+/*    Plan page style */
+
+
+    .plan {
+        padding-bottom: 144px;
+    }
+
+    .plan__wrapper {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: center;
+        padding: 127px 0 126px 58px;
+        background-size: cover;
+    }
+
+    .plan__title {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 48px; 
+        text-align: center;
+        color: #fefcf7;
+    }
+
+    .plan__desc-wrapper {
+        max-width: 398px;
+    }
+
+    .plan__desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Barlow;
+        font-size: 15px;
+        line-height: 25px; 
+        color: #fefcf7;
+        opacity: 0.8;
+    }
+
+/*   Plan page style ends */
+
 }
  @media only screen and (min-width: 1120px) {
      .collection {
@@ -3777,6 +3930,44 @@
     }
      .s-m-list__link {
          text-decoration: none;
+    }
+
+      .plan {
+        padding-bottom: 168px;
+    }
+
+    .plan__wrapper {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: center;
+        padding: 134px 0 134px 86px;
+        background: url("../images/planherobgdesktop.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .plan__title {
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px; 
+        text-align: center;
+        color: #fefcf7;
+    }
+
+    .plan__desc-wrapper {
+        max-width: 445px;
+    }
+
+    .plan__desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Barlow;
+        font-size: 16px;
+        line-height: 26px; 
+        color: #fefcf7;
+        opacity: 0.8;
     }
 }
 
