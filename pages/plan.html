@@ -92,15 +92,15 @@
           <h2 class="visually-hidden">Coffee</h2>
           <div class="choice__wrapper">
             <ol class="choice__list">
-              <li class="choice__item" title="Preferences"> Preferences </li>
-              <li class="choice__item" title="Bean Type"> Bean Type </li>
-              <li class="choice__item" title="Quantity"> Quantity </li>
-              <li class="choice__item" title="Grind Option"> Grind Option </li>
-              <li class="choice__item" title="Deliveries"> Deliveries </li>
+              <li class="choice__item js-preferences-item" title="Preferences"> Preferences </li>
+              <li class="choice__item js-beantype-item" title="Bean Type"> Bean Type </li>
+              <li class="choice__item js-quantity-item" title="Quantity"> Quantity </li>
+              <li class="choice__item js-grind-item" title="Grind Option"> Grind Option </li>
+              <li class="choice__item js-deliveries-item" title="Deliveries"> Deliveries </li>
             </ol>
             <div class="choice__action-wrapper">
               <div class="choice__details-wrapper">
-                <details class="choice__action">
+                <details class="choice__action js-preferences">
                 <summary class="choice__action-summary" title="How do you drink your coffee?">How do you drink your coffee?</summary>
                 <form class="choice__form" autocomplete="off">
                   <div class="choice__input-wrapper">
@@ -126,7 +126,7 @@
                   </div>
                 </form>
               </details>
-              <details class="choice__action">
+              <details class="choice__action js-beantype">
                 <summary class="choice__action-summary" title="What type of coffee?">What type of coffee?</summary>
                 <form class="choice__form" autocomplete="off">
                   <div class="choice__input-wrapper">
@@ -152,7 +152,7 @@
                   </div>
                 </form>
               </details>
-              <details class="choice__action">
+              <details class="choice__action js-quantity">
                 <summary class="choice__action-summary" title="How much would you like?">How much would you like?</summary>
                 <form class="choice__form" autocomplete="off">
                   <div class="choice__input-wrapper">
@@ -178,7 +178,7 @@
                   </div>
                 </form>
               </details>
-              <details class="choice__action">
+              <details class="choice__action js-grind">
                 <summary class="choice__action-summary" title="Want us to grind them?">Want us to grind them?</summary>
                 <form class="choice__form" autocomplete="off">
                   <div class="choice__input-wrapper">
@@ -204,25 +204,25 @@
                   </div>
                 </form>
               </details>
-              <details class="choice__action">
+              <details class="choice__action js-deliveries">
                 <summary class="choice__action-summary" title="How often should we deliver?">How often should we deliver?</summary>
                 <form class="choice__form" autocomplete="off">
                   <div class="choice__input-wrapper">
-                    <input id="week" class="choice__input" type="radio" name="grind" value="Every week">
+                    <input id="week" class="choice__input" type="radio" name="deliveries" value="Every week">
                     <label for="week" class="choice__label">
                       <strong class="choice__inner-title" title="Every week"> Every week </strong>
                       <span class="choice__inner-desc" title="$7.20 per shipment. Includes free first-class shipping."> $7.20 per shipment. Includes free first-class shipping. </span>
                     </label>
                   </div>
                   <div class="choice__input-wrapper">
-                    <input id="two_weeks" class="choice__input" type="radio" name="grind" value="Every 2 weeks">
+                    <input id="two_weeks" class="choice__input" type="radio" name="deliveries" value="Every 2 weeks">
                     <label for="two_weeks" class="choice__label">
                       <strong class="choice__inner-title" title="Every 2 weeks"> Every 2 weeks </strong>
                       <span class="choice__inner-desc" title="$9.60 per shipment. Includes free priority shipping."> $9.60 per shipment. Includes free priority shipping. </span>
                     </label>
                   </div>
                   <div class="choice__input-wrapper">
-                    <input id="month" class="choice__input" type="radio" name="grind" value="Every month">
+                    <input id="month" class="choice__input" type="radio" name="deliveries" value="Every month">
                     <label for="month" class="choice__label">
                       <strong class="choice__inner-title" title="Every month"> Every month </strong>
                       <span class="choice__inner-desc" title="$12.00 per shipment. Includes free priority shipping."> $12.00 per shipment. Includes free priority shipping. </span>
@@ -236,10 +236,13 @@
                 <strong class="choice__summary-title" title="Order Summary"> Order Summary </strong>
                 <div class="choice__summary-desc-wrapper">
                    <p class="choice__summary-desc" title="“I drink my coffee as Filter, with a Decaf type of bean. 
-                  250g ground ala Cafetiére, sent to me Every Week.”"> “I drink my coffee as <strong class="choice__summary-user-choice">Filter</strong>, with a <strong class="choice__summary-user-choice">Decaf</strong> type of bean. <strong class="choice__summary-user-choice">250g</strong> ground ala <strong class="choice__summary-user-choice">Cafetiére</strong>, sent to me <strong class="choice__summary-user-choice">Every Week</strong>.” </p>
+                  250g ground ala Cafetiére, sent to me Every Week.”"> “I drink my coffee as
+                   <strong class="choice__summary-user-choice js-preferences-place">
+                  ____
+                </strong>, with a <strong class="choice__summary-user-choice js-beantype-place">____</strong> type of bean. <strong class="choice__summary-user-choice js-preferences-beantype js-quantity-place">____</strong> ground ala <strong class="choice__summary-user-choice js-grind-place">____</strong>, sent to me <strong class="choice__summary-user-choice js-deliveries-place">____</strong>.” </p>
                 </div>
               </div>
-              <button class="choice__btn js-choice-btn" title="Create my plan!"> Create my plan! </button>
+              <button class="choice__btn  js-choice-btn" title="Create my plan!" disabled> Create my plan! </button>
               </div>
             </div>
           </div>
