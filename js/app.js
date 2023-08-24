@@ -94,6 +94,8 @@ function listenInputChecked(el, elItem, elPlace) {
           if(item.innerHTML === '____') {
             flag = false;
             break;
+          }else {
+            flag = true;
           }
       }
 
@@ -102,7 +104,7 @@ function listenInputChecked(el, elItem, elPlace) {
          elChoiceBtn.removeAttribute('disabled'); 
       }else {
          elChoiceBtn.classList.remove('choice__btn--active');
-         elChoiceBtn.setAttribute('disabled');
+         elChoiceBtn.setAttribute('disabled', '');
       }
 
    }else {
