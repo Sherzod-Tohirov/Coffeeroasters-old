@@ -28,7 +28,9 @@ elToggleBtn.addEventListener('click', (evt) => {
 
 let path = window.location.pathname.split('/');
 
-if(path[path.length - 1] === 'plan.html') {
+let currentPath = path[path.length - 1];
+
+if(currentPath=== 'plan.html' || currentPath === 'plan') {
    
 
 
