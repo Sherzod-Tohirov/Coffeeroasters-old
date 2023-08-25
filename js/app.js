@@ -26,6 +26,12 @@ elToggleBtn.addEventListener('click', (evt) => {
 
 // Choice btn element
 
+let path = window.location.pathname.split('/');
+
+if(path[path.length - 1] === 'plan.html') {
+   
+
+
 const elChoiceBtn = document.querySelector('.js-choice-btn');
 
 
@@ -119,7 +125,47 @@ function listenInputChecked(el, elItem, elPlace) {
 
 
 
-// Create my plan button action 
+// Order summary part
+
+const modal = document.querySelector('.js-modal');
+const overlay = document.querySelector('.js-overlay');
+const elModalDesc = document.querySelector('.js-modal-desc');
+const elCheckOutBtn = document.querySelector('.js-checkout-btn');
+const elCheckOutBtnMobile = document.querySelector('.js-modal-btn-mobile');
+const elSummaryDesc = document.querySelector('.js-ummary-desc');
+
+elChoiceBtn.addEventListener('click', (evt) => {
+
+   let val = elChoiceBtn.classList.contains('choice__btn--active');
+
+   if(val) {
+      overlay.style.display ='block'; 
+      modal.classList.add('modal-appear');
+      elModalDesc.innerHTML = elSummaryDesc.innerHTML; 
+   }else {
+      overlay.style.display ='none'; 
+      modal.classList.remove('modal-appear');
+   }
+
+});
+
+
+overlay.addEventListener('click', (evt) => {
+      overlay.style.display ='none'; 
+      modal.classList.remove('modal-appear');
+});
+
+elCheckOutBtn.addEventListener('click', (evt) => {
+      overlay.style.display ='none'; 
+      modal.classList.remove('modal-appear');
+});
+
+elCheckOutBtnMobile.addEventListener('click', (evt) => {
+      overlay.style.display ='none'; 
+      modal.classList.remove('modal-appear');
+});
+
+}
 
 
 
