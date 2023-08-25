@@ -30,7 +30,7 @@ let path = window.location.pathname.split('/');
 
 let currentPath = path[path.length - 1];
 
-if(currentPath=== 'plan.html' || currentPath === 'plan') {
+if(currentPath === 'plan.html' || currentPath === 'plan') {
    
 
 
